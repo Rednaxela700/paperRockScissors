@@ -29,37 +29,31 @@ function convertToWord(letter) {
 
 function win(userChoice, computerChoice) {
 
-    const smallUserWord = "user".fontsize(3).sub();
-    const smallCompWord = "comp".fontsize(3).sub();
     const userChoice_div = document.getElementById(userChoice);
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats ${convertToWord(computerChoice)}${smallCompWord}.<br> You win!`;
+    result_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(computerChoice)}.<br> You win!`;
     userChoice_div.classList.add('green-glow');
     setTimeout(function () {
-        userChoice_div.classList.remove('green-glow') }, 300);
+        userChoice_div.classList.remove('green-glow') }, 2410);
 }
 function lose(userChoice, computerChoice) {
 
-    const smallUserWord = "user".fontsize(3).sub();
-    const smallCompWord = "comp".fontsize(3).sub();
     const userChoice_div = document.getElementById(userChoice);
     computerScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to ${convertToWord(computerChoice)}${smallCompWord}.<br> You lose!`;
+    result_p.innerHTML = `${convertToWord(userChoice)} loses to ${convertToWord(computerChoice)}.<br> You lose!`;
     userChoice_div.classList.add('red-glow');
     setTimeout(function () {
-        userChoice_div.classList.remove('red-glow') }, 300);
+        userChoice_div.classList.remove('red-glow') }, 1300);
 
 }
 function draw(userChoice, computerChoice) {
     /*console.log("draw");*/
-    const smallUserWord = "user".fontsize(3).sub();
-    const smallCompWord = "comp".fontsize(3).sub();
     const userChoice_div = document.getElementById(userChoice);
-    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals to ${convertToWord(computerChoice)}${smallCompWord}.<br> It's a draw!`;
+    result_p.innerHTML = `${convertToWord(userChoice)} equals to ${convertToWord(computerChoice)}.<br> It's a draw!`;
     userChoice_div.classList.add('gray-glow');
     setTimeout(function () {
         userChoice_div.classList.remove('gray-glow') }, 300);
