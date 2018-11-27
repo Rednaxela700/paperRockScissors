@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Paper Rock Scissors Game</title>
     <link rel="stylesheet" href="styles.css">
@@ -17,7 +17,7 @@
 </header>
 <div class="scoreboard">
     <div id="user-label" class="badge">
-        user
+       <div class="round"></div>user
     </div>
     <div id="computer-label" class="badge">
         comp
@@ -42,10 +42,10 @@
 </div>
 
 <p id="action">Make your move</p>
-<div class="highscore">
+<!--<div class="highscore">
     <input type="text" id="highscoreName">
     <button id="export">print dupek</button>
-</div>
+</div>-->
 <script src="app.js" charset="utf-8"></script>
 </body>
 
