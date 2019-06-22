@@ -23,3 +23,16 @@ for ($scoresNum = 1; $scoresNum <= $highScoreNum; $scoresNum++) {
         $allScores .= '<hr>';
     }
 };
+
+/*Find a div with id scoreboard*/
+$html = file_get_html('sites/main.php');
+
+$ret = $html->find('div[id=scoreboard]');
+
+/** getting div content from html */
+$dom = new DOMDocument();
+
+$dom->loadHTML($html);
+
+$xpath = new DOMXPath($dom);
+$divContent = $xpath->query('string(//div[id="product_list"])'); //saved in divContent

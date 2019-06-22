@@ -46,6 +46,8 @@
     <input type="text" id="highscoreName">
     <button id="export">print dupek</button>
 </div>-->
+<?php
+?>
 <script src="app.js" charset="utf-8"></script>
 </body>
 

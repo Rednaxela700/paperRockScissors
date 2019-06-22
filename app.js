@@ -122,6 +122,3 @@ function main() {
 }
 main();
 
-function exportPHP() {
-    exportButton.innerHTML = "<?php echo \"dupek\" ?>";
-}
